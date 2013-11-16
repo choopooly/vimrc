@@ -81,6 +81,16 @@ set tm=500
    au FileType Makefile set noexpandtab
 "}      							
 
+" For some reason home and end keys are not mapping properly.
+" Home key
+imap <esc>OH <esc>0i
+cmap <esc>OH <home>
+nmap <esc>OH 0
+" End key
+nmap <esc>OF $
+imap <esc>OF <esc>$a
+cmap <esc>OF <end>
+
 " status line {
 set laststatus=2
 set statusline=\ %{HasPaste()}%<%-15.25(%f%)%m%r%h\ %w\ \ 
