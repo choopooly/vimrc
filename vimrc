@@ -299,7 +299,7 @@ let g:tex_flavor='latex'
 " --- AutoClose - Inserts matching bracket, paren, brace or quote 
 " fixed the arrow key problems caused by AutoClose
 if !has("gui_running")	
-   set term=linux
+   set term=xterm
    imap OA <ESC>ki
    imap OB <ESC>ji
    imap OC <ESC>li
